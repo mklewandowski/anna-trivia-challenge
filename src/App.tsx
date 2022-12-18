@@ -1,6 +1,7 @@
 import React, {useState}  from 'react';
 import anna from "./anna.png";
 import strawShort from "./straw-short.jpeg";
+import { QuizQuestions } from "./utils";
 import './App.css';
 
 function App() {
@@ -25,21 +26,24 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <div className="app-shell">
         {started
           ? <>
               <div className="question-image-box">
-                <img src={strawShort} width={"200px"} />
+                <img src={QuizQuestions[questionNum].image} width={"230px"} />
               </div>
-              <div className="question-label">Who is this?</div>
-              <div>
-                <button className="answer-button">A1</button>
-                <button className="answer-button">A2</button>
-                <button className="answer-button">A3</button>
-                <button className="answer-button">A4</button>
+              {showQuestion
+                ? <div className="question-label">{QuizQuestions[questionNum].question}</div>
+                : <div className="question-label">{answerNum} correct or incorrect</div>
+              }
+              <div className="button-container">
+                <button className={`answer-button ${!showQuestion && answerNum === 0 ? "answer-correct" : ""}`} onClick={() => {onAnswerClick(0)}}>{QuizQuestions[questionNum].answers[0]}</button>
+                <button className={`answer-button ${!showQuestion && answerNum === 1 ? "answer-incorrect" : ""}`} onClick={() => {onAnswerClick(1)}}>{QuizQuestions[questionNum].answers[1]}</button>
+                <button className={`answer-button ${!showQuestion && answerNum === 2 ? "answer-incorrect" : ""}`} onClick={() => {onAnswerClick(2)}}>{QuizQuestions[questionNum].answers[2]}</button>
+                <button className={`answer-button ${!showQuestion && answerNum === 3 ? "answer-incorrect" : ""}`} onClick={() => {onAnswerClick(3)}}>{QuizQuestions[questionNum].answers[3]}</button>
               </div>
-          
+              {!showQuestion && <button className="next-button" onClick={onNextClick}>{"next >"}</button>}
             </>
           : <>
               <header className="intro-header">
@@ -48,7 +52,7 @@ function App() {
                 <div className="intro-header-sub">a time waster by therealmattkain</div>
               </header>
               <div className="intro-text">Ok, hot shot. It's you from the past. Let's take a little quiz and see how well you remember our childhood. You'll need to dig deep into the dusty memories of Super 18 (Milwaukee's super station), the Sears Christmas catalog, and all things plastic. Or maybe it will be super easy. Are you ready?</div>
-              <button className="start-button" onClick={onStartClick}>START</button>
+              <button className="start-button" onClick={onStartClick}>Start...</button>
             </>
         }
       </div>
