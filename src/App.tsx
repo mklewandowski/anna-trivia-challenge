@@ -6,9 +6,22 @@ import './App.css';
 function App() {
   const [started, setStarted] = useState(false);
   const [complete, setComplete] = useState(false);
+  const [questionNum, setQuestionNum] = useState(0);
+  const [answerNum, setAnswerNum] = useState(0);
+  const [showQuestion, setShowQuestion] = useState(true);
 
   const onStartClick = () => {
     setStarted(true);
+  }
+
+  const onAnswerClick = (userAnswerNum: number) => {
+    setAnswerNum(userAnswerNum);
+    setShowQuestion(false);
+  }
+
+  const onNextClick = () => {
+    setQuestionNum(questionNum + 1);
+    setShowQuestion(true);
   }
 
   return (
