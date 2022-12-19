@@ -16,6 +16,9 @@ import goodluck from "./goodluck.jpg";
 import grouchy from "./grouchy.jpg";
 import lotsaheart from "./lotsaheart.jpg";
 import wish from "./wish.jpg";
+import minty from "./minty.jpg";
+import cottoncandy from "./cottoncandy.jpg";
+import butterscotch from "./butterscotch.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -81,6 +84,16 @@ export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Lotsa Heart Elephant","Big Heart Elephant","Strong Heart Elephant","Gentle Heart Elephant"],
     image: lotsaheart},
+
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Minty","Clover","Green Gallop","Meadow"],
+    image: minty},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Cotton Candy","Tender","Passion","Guava"],
+    image: cottoncandy},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Butterscotch","Butterfly","Vanilla","Pudding"],
+    image: butterscotch},
 
 ];
 
