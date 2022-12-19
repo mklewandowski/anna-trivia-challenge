@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anna-trivia-challenge/static/css/main.4ee0dc9d.css",
-    "main.js": "/anna-trivia-challenge/static/js/main.096d25aa.js",
+    "main.css": "/anna-trivia-challenge/static/css/main.4c8793ad.css",
+    "main.js": "/anna-trivia-challenge/static/js/main.d4cde7e1.js",
     "static/js/787.55a89e3d.chunk.js": "/anna-trivia-challenge/static/js/787.55a89e3d.chunk.js",
     "static/media/anna.png": "/anna-trivia-challenge/static/media/anna.6b220936a7932a4ca953.png",
     "static/media/ap.jpg": "/anna-trivia-challenge/static/media/ap.4202a017375a15c519b6.jpg",
@@ -56,12 +56,12 @@
     "static/media/lemon.jpg": "/anna-trivia-challenge/static/media/lemon.ad696d349f8a0c6fa57b.jpg",
     "static/media/ken.jpg": "/anna-trivia-challenge/static/media/ken.84ba9e27a8865e41ac1e.jpg",
     "index.html": "/anna-trivia-challenge/index.html",
-    "main.4ee0dc9d.css.map": "/anna-trivia-challenge/static/css/main.4ee0dc9d.css.map",
-    "main.096d25aa.js.map": "/anna-trivia-challenge/static/js/main.096d25aa.js.map",
+    "main.4c8793ad.css.map": "/anna-trivia-challenge/static/css/main.4c8793ad.css.map",
+    "main.d4cde7e1.js.map": "/anna-trivia-challenge/static/js/main.d4cde7e1.js.map",
     "787.55a89e3d.chunk.js.map": "/anna-trivia-challenge/static/js/787.55a89e3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ee0dc9d.css",
-    "static/js/main.096d25aa.js"
+    "static/css/main.4c8793ad.css",
+    "static/js/main.d4cde7e1.js"
   ]
 }
