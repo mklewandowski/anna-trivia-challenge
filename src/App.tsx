@@ -55,24 +55,28 @@ function App() {
                 <button
                   className={`answer-button ${!showQuestion && ((0 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((0 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
                   onClick={() => {onAnswerClick((0 + quizOffset) % 4)}}
+                  disabled={!showQuestion}
                 >
                   {QuizQuestions[questionNum].answers[(0 + quizOffset) % 4]}
                 </button>
                 <button
                   className={`answer-button ${!showQuestion && ((1 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((1 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
                   onClick={() => {onAnswerClick((1 + quizOffset) % 4)}}
+                  disabled={!showQuestion}
                 >
                   {QuizQuestions[questionNum].answers[(1 + quizOffset) % 4]}
                 </button>
                 <button
                   className={`answer-button ${!showQuestion && ((2 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((2 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
                   onClick={() => {onAnswerClick((2 + quizOffset) % 4)}}
+                  disabled={!showQuestion}
                 >
                   {QuizQuestions[questionNum].answers[(2 + quizOffset) % 4]}
                 </button>
                 <button
                   className={`answer-button ${!showQuestion && ((3 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((3 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
                   onClick={() => {onAnswerClick((3 + quizOffset) % 4)}}
+                  disabled={!showQuestion}
                 >
                   {QuizQuestions[questionNum].answers[(3 + quizOffset) % 4]}
                 </button>
