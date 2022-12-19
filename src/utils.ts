@@ -29,10 +29,10 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Strawberry Shortcake","Miss Berry Hat","Fruit Princess","Strawberry Shortbread"],
     image: strawshort},
   { answerNum: 0, question: "Who is this?",
-    answers: ["Apricot","Peach","Berry Baby","Fig"],
+    answers: ["Apricot","Peach","Berry Baby","Plum"],
     image: apricot},
   { answerNum: 0, question: "Who is this?",
-    answers: ["Huckleberry Pie","Blueberry Pie","Finn","Huck Pudding"],
+    answers: ["Huckleberry Pie","Blueberry Pie","Boysenberry Boy","Plum Pudding"],
     image: huck},
   { answerNum: 0, question: "Who is this?",
     answers: ["Lemon Meringue","Lucy Lemon","Lemon Cake","Lemon & Lime"],
@@ -87,3 +87,5 @@ export const QuizQuestions: QuizQuestion[] = [
 // my little pony x 6
 // barbie x 6
 // lady lovely, glow worms, x 6
+// she-ra
+// jem
