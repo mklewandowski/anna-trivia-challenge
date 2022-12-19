@@ -94,18 +94,22 @@
 }
 
 .button-container {
-  width: 300px;
+  width: 320px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 15px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .answer-button {
-  height: 50px;
-  width: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 140px;
   border: solid 2px black;
   border-radius: 10px;
   background-color: white;
@@ -113,6 +117,7 @@
   font-weight: bold;
   color: black;
   margin: 5px;
+  padding: 4px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
