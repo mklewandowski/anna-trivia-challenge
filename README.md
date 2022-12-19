@@ -1,10 +1,10 @@
 # Anna Trivia Challenge
-Anna Trivia Challenge is a small '80s toy quiz that I made for my sister. Anna Trivia Challenge is hosted on a GitHub Page at https://mklewandowski.github.io/anna-trivia-challenge/
+Anna Trivia Challenge is a small '80s quiz that I made for my sister. It's built using React and written in Typescript. Anna Trivia Challenge is hosted on a GitHub Page at https://mklewandowski.github.io/anna-trivia-challenge/
 
 ## Run Locally
 - clone GitHub repo
-- run `yarn install`
-- run `yarn start`
+- run `npm install`
+- run `npm start`
 
 ## Build and Deploy to GitHub Page
 Before we can deploy to a GitHub page, we first do the following setup (from [https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)):
