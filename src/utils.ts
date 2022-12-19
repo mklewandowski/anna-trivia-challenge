@@ -185,7 +185,7 @@ export const QuizQuestions: QuizQuestion[] = [
     image: keedy},
 
   { answerNum: 0, question: "Who is this?",
-    answers: ["Malibu Barbie","Summer Barbie","California Barbie","LA Barbie"],
+    answers: ["Malibu Barbie","Summer Barbie","California Barbie","L.A. Barbie"],
     image: malibu},
   { answerNum: 0, question: "Who is this?",
     answers: ["Ken","Young Donald Trump","Kurt","Kip"],

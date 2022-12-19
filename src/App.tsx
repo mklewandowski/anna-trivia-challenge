@@ -13,7 +13,7 @@ function App() {
   const [showQuestion, setShowQuestion] = useState(true);
 
   const introText = "Hi, Anna! It's you from the past. How well do you remember our childhood? Let's take a little quiz and find out. You'll need to dig deep into the dusty memories of Super 18, the Sears Christmas catalog, and Toys 'R' Us. Are you ready?";
-  const outroText = "You did it! You made it to the end of the quiz! It doesn't really matter how many you got right because you're 43 and grades don't matter anymore! Happy birthday!!";
+  const outroText = "You did it! You made it to the end of the quiz! Who cares how many you got right. You're 43 and grades don't matter anymore! Happy birthday!!";
 
   const onStartClick = () => {
     shuffleArray(QuizQuestions);
