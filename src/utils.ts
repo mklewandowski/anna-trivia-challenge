@@ -27,6 +27,18 @@ import corv from "./corv.jpg";
 import jem from "./jem.jpg";
 import pizzazz from "./pizzazz.jpg";
 import synergy from "./synergy.jpg";
+import rose from "./rose.jpg";
+import space from "./space.jpg";
+import parent from "./parent.jpg";
+import keedy from "./keedy.jpg";
+import paula from "./paula.jpg";
+import clarissa from "./clarissa.jpg";
+import lady from "./lady.jpg";
+import scarlett from "./scarlett.jpg";
+import alf from "./alf.jpg";
+import willie from "./willie.jpg";
+import glow from "./glow.jpg";
+import pogo from "./pogo.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -55,6 +67,10 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Starlite","Starbright","Star Dancer","Star Soar"],
     image: starlite},
 
+  { answerNum: 0, question: "What movie is this from?",
+    answers: ["The Parent Trap","The Parent Trick","Twins","Star Wars"],
+    image: parent},
+
   { answerNum: 0, question: "Who is this?",
     answers: ["Strawberry Shortcake","Miss Berry Hat","Fruit Princess","Strawberry Shortbread"],
     image: strawshort},
@@ -68,11 +84,15 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Lemon Meringue","Lucy Lemon","Lemon Cake","Lemon & Lime"],
     image: lemon},
   { answerNum: 0, question: "Who is this?",
-    answers: ["Purple Pieman","Berry Baker","Lavendar Len","Pie Crook"],
+    answers: ["Purple Pieman","Berry Baker","Lavender Len","Pie Crook"],
     image: purppie},
   { answerNum: 0, question: "Who is this?",
     answers: ["Sour Grapes","Sour Queen","Grape Sorceress","Bitter Queen"],
     image: sour},
+
+  { answerNum: 0, question: "Where is this cat from?",
+    answers: ["Outer Space","Africa","Dimension X","The Past"],
+    image: space},
 
   { answerNum: 0, question: "Who is this?",
     answers: ["Funshine Bear","Sunshine Bear","Fun Bear","Sun Bear"],
@@ -94,6 +114,10 @@ export const QuizQuestions: QuizQuestion[] = [
     image: lotsaheart},
 
   { answerNum: 0, question: "Who is this?",
+    answers: ["Paula Abdul","Madonna","Wilson Phillips","Belinda Carlisle"],
+    image: paula},
+
+  { answerNum: 0, question: "Who is this?",
     answers: ["Jem","Jam","Jim","Jom"],
     image: jem},
   { answerNum: 0, question: "Who is this?",
@@ -104,6 +128,10 @@ export const QuizQuestions: QuizQuestion[] = [
     image: synergy},
 
   { answerNum: 0, question: "Who is this?",
+    answers: ["Rose","Blanche","Dorothy","Sophia"],
+    image: rose},
+
+  { answerNum: 0, question: "Who is this?",
     answers: ["Minty","Clover","Green Gallop","Meadow"],
     image: minty},
   { answerNum: 0, question: "Who is this?",
@@ -112,6 +140,10 @@ export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Butterscotch","Butterfly","Vanilla","Pudding"],
     image: butterscotch},
+
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Keedy","Katie","Kathy","Keitha"],
+    image: keedy},
 
   { answerNum: 0, question: "Who is this?",
     answers: ["Malibu Barbie","Summer Barbie","California Barbie","LA Barbie"],
@@ -129,7 +161,32 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Barbie Corvette","Barbie Race Car","Barbie Sweet 16","Barbiemobile "],
     image: corv},
 
+  { answerNum: 0, question: "What does she explain?",
+    answers: ["It All","Everything","The World","The Rules"],
+    image: clarissa},
+
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Lady Jaye","Lady Action","Madam Pow","Miss Fisticuffs"],
+    image: lady},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Scarlett","Power Girl","Scarina","Tough Tina"],
+    image: scarlett},
+
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Willie Tanner","Willie Thomas","Billie Tanner","Carl Tanner"],
+    image: willie},
+  { answerNum: 0, question: "What is his REAL name?",
+    answers: ["Gordon Shumway","ALF","Gordon Shuman","Karl Shumway"],
+    image: alf},
+
+  { answerNum: 0, question: "What's this?",
+    answers: ["Glow Worm","Snuggle Worm","Slumber Worm","Cuddle Worm"],
+    image: glow},
+
+  { answerNum: 0, question: "What's this?",
+    answers: ["Pogo Ball","Bounce Ball","Pogo Platform","Slide Ball"],
+    image: pogo},
+
 ];
 
-// lady lovely, glow worms, x 6
-// she-ra
+// lady lovely she-ra
