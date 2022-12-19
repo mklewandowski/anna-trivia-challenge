@@ -19,6 +19,11 @@ import wish from "./wish.jpg";
 import minty from "./minty.jpg";
 import cottoncandy from "./cottoncandy.jpg";
 import butterscotch from "./butterscotch.jpg";
+import malibu from "./malibu.jpg";
+import ken from "./ken.jpg";
+import skipper from "./skipper.jpg";
+import rockers from "./rockers.jpg";
+import corv from "./corv.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -95,9 +100,24 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Butterscotch","Butterfly","Vanilla","Pudding"],
     image: butterscotch},
 
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Malibu Barbie","Summer Barbie","California Barbie","LA Barbie"],
+    image: malibu},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Ken","Young Donald Trump","Kurt","Kip"],
+    image: ken},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Skipper","Maggie","Midge","Sandy"],
+    image: skipper},
+  { answerNum: 0, question: "Who are these ladies?",
+    answers: ["Barbie and the Rockers","Barbie and the Glam","The Sex Pistols","The Go Gos"],
+    image: rockers},
+  { answerNum: 0, question: "What is this?",
+    answers: ["Barbie Corvette","Barbie Race Car","Barbie Sweet 16","Barbiemobile "],
+    image: corv},
+
 ];
 
-// barbie x 6
 // lady lovely, glow worms, x 6
 // she-ra
 // jem
