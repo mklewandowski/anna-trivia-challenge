@@ -46,7 +46,7 @@ function App() {
         { quizRunning
           ? <>
               <div className="question-image-box">
-                <img src={QuizQuestions[questionNum].image} width={"250px"} />
+                <img src={QuizQuestions[questionNum].image} width={"250px"} alt="question" />
               </div>
               {showQuestion
                 ? <div className="question-label">{QuizQuestions[questionNum].question}</div>
@@ -89,7 +89,7 @@ function App() {
             </>
           : <>
               <header className="intro-header">
-                <img src={anna} width={"150px"} />
+                <img src={anna} width={"150px"} alt="anna" />
                 Quiz Time With Anna
                 <div className="intro-header-sub">a time waster by therealmattkain</div>
               </header>
