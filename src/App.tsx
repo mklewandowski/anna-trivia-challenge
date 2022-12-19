@@ -13,7 +13,7 @@ function App() {
   const [showQuestion, setShowQuestion] = useState(true);
 
   const introText = "Ok, hot shot. It's you from the past. Let's take a little quiz and see how well you remember our childhood. You'll need to dig deep into the dusty memories of Super 18 (Milwaukee's super station), the Sears Christmas catalog, and Toys 'R' Us. Or maybe it will be super easy. Are you ready?";
-  const outroText = "You did it! You made it to the end of the quiz! Happy birthday and thanks for playing!";
+  const outroText = "You did it! You made it to the end of the quiz! It doesn't really matter how many you got right because you're 43 and grades don't matter anymore! Happy birthday!!";
 
   const onStartClick = () => {
     setQuizRunning(true);
@@ -49,7 +49,10 @@ function App() {
               </div>
               {showQuestion
                 ? <div className="question-label">{QuizQuestions[questionNum].question}</div>
-                : <div className="question-label">{`${numCorrect} out of ${questionNum + 1} correct!`}</div>
+                : <div className="question-label">
+                    <span className="question-result">{`${answerNum === 0 ? "RIGHT!" : "WRONG!"}`}</span>
+                    <span className="question-result">{`${numCorrect} out of ${questionNum + 1} correct!`}</span>
+                    </div>
               }
               <div className="button-container">
                 <button
@@ -81,7 +84,7 @@ function App() {
                   {QuizQuestions[questionNum].answers[(3 + quizOffset) % 4]}
                 </button>
               </div>
-              {!showQuestion && <button className="next-button" onClick={onNextClick}>{"next >"}</button>}
+              {!showQuestion && <button className="next-button" onClick={onNextClick}>{"NEXT >"}</button>}
             </>
           : <>
               <header className="intro-header">
@@ -89,10 +92,9 @@ function App() {
                 Quiz Time With Anna
                 <div className="intro-header-sub">a time waster by therealmattkain</div>
               </header>
+              { quizComplete && <div className="done-label">{`${numCorrect} out of ${questionNum + 1} correct!`}</div> }
               <div className="intro-text">{quizComplete ? outroText : introText}</div>
-              { quizComplete
-                ? <div>{`${numCorrect} out of ${questionNum + 1} correct!`}</div>
-                : <button className="start-button" onClick={onStartClick}>Start...</button>
+              { !quizComplete && <button className="start-button" onClick={onStartClick}>{"START >"}</button>
               }
             </>
         }

@@ -97,7 +97,6 @@ export const QuizQuestions: QuizQuestion[] = [
 
 ];
 
-// my little pony x 6
 // barbie x 6
 // lady lovely, glow worms, x 6
 // she-ra
