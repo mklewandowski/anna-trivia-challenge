@@ -24,6 +24,9 @@ import ken from "./ken.jpg";
 import skipper from "./skipper.jpg";
 import rockers from "./rockers.jpg";
 import corv from "./corv.jpg";
+import jem from "./jem.jpg";
+import pizzazz from "./pizzazz.jpg";
+import synergy from "./synergy.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -33,25 +36,6 @@ export interface QuizQuestion {
 }
 
 export const QuizQuestions: QuizQuestion[] = [
-  { answerNum: 0, question: "Who is this?",
-    answers: ["Strawberry Shortcake","Miss Berry Hat","Fruit Princess","Strawberry Shortbread"],
-    image: strawshort},
-  { answerNum: 0, question: "Who is this?",
-    answers: ["Apricot","Peach","Berry Baby","Plum"],
-    image: apricot},
-  { answerNum: 0, question: "Who is this?",
-    answers: ["Huckleberry Pie","Blueberry Pie","Boysenberry Boy","Plum Pudding"],
-    image: huck},
-  { answerNum: 0, question: "Who is this?",
-    answers: ["Lemon Meringue","Lucy Lemon","Lemon Cake","Lemon & Lime"],
-    image: lemon},
-  { answerNum: 0, question: "Who is this?",
-    answers: ["Purple Pieman","Berry Baker","Lavendar Len","Pie Crook"],
-    image: purppie},
-  { answerNum: 0, question: "Who is this?",
-    answers: ["Sour Grapes","Sour Queen","Grape Sorceress","Bitter Queen"],
-    image: sour},
-
   { answerNum: 0, question: "Who is this?",
     answers: ["Rainbow Brite","Rainbow Jenny","Color Witch","Rainbow Strong"],
     image: rainbow},
@@ -72,6 +56,25 @@ export const QuizQuestions: QuizQuestion[] = [
     image: starlite},
 
   { answerNum: 0, question: "Who is this?",
+    answers: ["Strawberry Shortcake","Miss Berry Hat","Fruit Princess","Strawberry Shortbread"],
+    image: strawshort},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Apricot","Peach","Berry Baby","Plum"],
+    image: apricot},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Huckleberry Pie","Blueberry Pie","Boysenberry Boy","Plum Pudding"],
+    image: huck},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Lemon Meringue","Lucy Lemon","Lemon Cake","Lemon & Lime"],
+    image: lemon},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Purple Pieman","Berry Baker","Lavendar Len","Pie Crook"],
+    image: purppie},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Sour Grapes","Sour Queen","Grape Sorceress","Bitter Queen"],
+    image: sour},
+
+  { answerNum: 0, question: "Who is this?",
     answers: ["Funshine Bear","Sunshine Bear","Fun Bear","Sun Bear"],
     image: funshine},
   { answerNum: 0, question: "Who is this?",
@@ -89,6 +92,16 @@ export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Lotsa Heart Elephant","Big Heart Elephant","Strong Heart Elephant","Gentle Heart Elephant"],
     image: lotsaheart},
+
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Jem","Jam","Jim","Jom"],
+    image: jem},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Pizzazz","Pizza","Pizzaro","Pixxie"],
+    image: pizzazz},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Synergy","Energy","Sheena","Shine"],
+    image: synergy},
 
   { answerNum: 0, question: "Who is this?",
     answers: ["Minty","Clover","Green Gallop","Meadow"],
@@ -120,4 +133,3 @@ export const QuizQuestions: QuizQuestion[] = [
 
 // lady lovely, glow worms, x 6
 // she-ra
-// jem
