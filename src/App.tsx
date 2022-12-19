@@ -1,6 +1,6 @@
 import React, {useState}  from 'react';
 import anna from "./anna.png";
-import { QuizQuestions } from "./utils";
+import { QuizQuestions, shuffleArray } from "./utils";
 import './App.css';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
   const outroText = "You did it! You made it to the end of the quiz! It doesn't really matter how many you got right because you're 43 and grades don't matter anymore! Happy birthday!!";
 
   const onStartClick = () => {
+    shuffleArray(QuizQuestions);
     setQuizRunning(true);
     const randNum = Math.floor(Math.random() * 4);
     setQuizOffset(randNum);
@@ -52,7 +53,7 @@ function App() {
                 : <div className="question-label">
                     <span className="question-result">{`${answerNum === 0 ? "RIGHT!" : "WRONG!"}`}</span>
                     <span className="question-result">{`${numCorrect} out of ${questionNum + 1} correct!`}</span>
-                    </div>
+                  </div>
               }
               <div className="button-container">
                 <button
