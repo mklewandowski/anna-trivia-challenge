@@ -80,14 +80,14 @@
 }
 
 .question-label {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin: 0;
   width: 100%;
-  height: 28px;
-  background-color: #491C71;
+  height: 30px;
+  background-color: #01A6FF;
   color: white;
-  border: solid #01A6FF 4px;
+  border: solid #FFA2BF 4px;
   border-left: 0;
   border-right: 0;
 }

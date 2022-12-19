@@ -12,7 +12,7 @@ function App() {
   const [numCorrect, setNumCorrect] = useState(0);
   const [showQuestion, setShowQuestion] = useState(true);
 
-  const introText = "Ok, hot shot. It's you from the past. Let's take a little quiz and see how well you remember our childhood. You'll need to dig deep into the dusty memories of Super 18 (Milwaukee's super station), the Sears Christmas catalog, and Toys 'R' Us. Or maybe it will be super easy. Are you ready?";
+  const introText = "Hi, Anna! It's you from the past. How well do you remember our childhood? Let's take a little quiz and find out. You'll need to dig deep into the dusty memories of Super 18, the Sears Christmas catalog, and Toys 'R' Us. Are you ready?";
   const outroText = "You did it! You made it to the end of the quiz! It doesn't really matter how many you got right because you're 43 and grades don't matter anymore! Happy birthday!!";
 
   const onStartClick = () => {
