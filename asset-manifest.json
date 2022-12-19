@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anna-trivia-challenge/static/css/main.d0950c7e.css",
-    "main.js": "/anna-trivia-challenge/static/js/main.1ea9f858.js",
+    "main.js": "/anna-trivia-challenge/static/js/main.56a43df3.js",
     "static/js/787.55a89e3d.chunk.js": "/anna-trivia-challenge/static/js/787.55a89e3d.chunk.js",
     "static/media/ap.jpg": "/anna-trivia-challenge/static/media/ap.4202a017375a15c519b6.jpg",
     "static/media/anna.png": "/anna-trivia-challenge/static/media/anna.9f67bfa545aa11c941c1.png",
@@ -57,11 +57,11 @@
     "static/media/ken.jpg": "/anna-trivia-challenge/static/media/ken.84ba9e27a8865e41ac1e.jpg",
     "index.html": "/anna-trivia-challenge/index.html",
     "main.d0950c7e.css.map": "/anna-trivia-challenge/static/css/main.d0950c7e.css.map",
-    "main.1ea9f858.js.map": "/anna-trivia-challenge/static/js/main.1ea9f858.js.map",
+    "main.56a43df3.js.map": "/anna-trivia-challenge/static/js/main.56a43df3.js.map",
     "787.55a89e3d.chunk.js.map": "/anna-trivia-challenge/static/js/787.55a89e3d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0950c7e.css",
-    "static/js/main.1ea9f858.js"
+    "static/js/main.56a43df3.js"
   ]
 }
