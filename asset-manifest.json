@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/anna-trivia-challenge/static/css/main.4ee0dc9d.css",
+    "main.js": "/anna-trivia-challenge/static/js/main.81758b6a.js",
+    "static/js/787.55a89e3d.chunk.js": "/anna-trivia-challenge/static/js/787.55a89e3d.chunk.js",
+    "static/media/anna.png": "/anna-trivia-challenge/static/media/anna.6b220936a7932a4ca953.png",
+    "static/media/ap.jpg": "/anna-trivia-challenge/static/media/ap.4202a017375a15c519b6.jpg",
+    "static/media/wallpaper.jpg": "/anna-trivia-challenge/static/media/wallpaper.28a9ba81ac7af0c9fe27.jpg",
+    "static/media/rb.jpg": "/anna-trivia-challenge/static/media/rb.273fce4fd854855ef46a.jpg",
+    "static/media/indigo.jpg": "/anna-trivia-challenge/static/media/indigo.f2fc598df9cf898c0f20.jpg",
+    "static/media/braveheart.jpg": "/anna-trivia-challenge/static/media/braveheart.a4e96996cc58a1a118a5.jpg",
+    "static/media/redbut.jpg": "/anna-trivia-challenge/static/media/redbut.3b61c0440c54685e1cc5.jpg",
+    "static/media/goodluck.jpg": "/anna-trivia-challenge/static/media/goodluck.40140c523fb48ca24d2f.jpg",
+    "static/media/lurky.jpg": "/anna-trivia-challenge/static/media/lurky.5ccd28106d27cc037ab5.jpg",
+    "static/media/murky.jpg": "/anna-trivia-challenge/static/media/murky.e7e46202663073c21fbd.jpg",
+    "static/media/funshine.jpg": "/anna-trivia-challenge/static/media/funshine.4b21becdaecd5e7b75cf.jpg",
+    "static/media/minty.jpg": "/anna-trivia-challenge/static/media/minty.5fb8f44928b834b1ebed.jpg",
+    "static/media/starlite.jpg": "/anna-trivia-challenge/static/media/starlite.a1c0ecd9bf1b84213cdf.jpg",
+    "static/media/grouchy.jpg": "/anna-trivia-challenge/static/media/grouchy.9db4d68450c414b913e3.jpg",
+    "static/media/wish.jpg": "/anna-trivia-challenge/static/media/wish.23ba01646c72fbeacb4f.jpg",
+    "static/media/huck.jpg": "/anna-trivia-challenge/static/media/huck.3be8b2ca6d9c95e80da8.jpg",
+    "static/media/lotsaheart.jpg": "/anna-trivia-challenge/static/media/lotsaheart.7fbca5e72b9dd95224d9.jpg",
+    "static/media/stsh.jpg": "/anna-trivia-challenge/static/media/stsh.c161c61e0b5d7dcb7bf4.jpg",
+    "static/media/butterscotch.jpg": "/anna-trivia-challenge/static/media/butterscotch.f3dcf3c3a8dd411f7e08.jpg",
+    "static/media/cottoncandy.jpg": "/anna-trivia-challenge/static/media/cottoncandy.5f1574f55891135a470e.jpg",
+    "static/media/purppie.jpg": "/anna-trivia-challenge/static/media/purppie.687f53b1392bea2bebff.jpg",
+    "static/media/sour.jpg": "/anna-trivia-challenge/static/media/sour.7b1a38a484a8442ac2d3.jpg",
+    "static/media/lemon.jpg": "/anna-trivia-challenge/static/media/lemon.ad696d349f8a0c6fa57b.jpg",
+    "index.html": "/anna-trivia-challenge/index.html",
+    "main.4ee0dc9d.css.map": "/anna-trivia-challenge/static/css/main.4ee0dc9d.css.map",
+    "main.81758b6a.js.map": "/anna-trivia-challenge/static/js/main.81758b6a.js.map",
+    "787.55a89e3d.chunk.js.map": "/anna-trivia-challenge/static/js/787.55a89e3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ee0dc9d.css",
+    "static/js/main.81758b6a.js"
+  ]
+}
