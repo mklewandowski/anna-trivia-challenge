@@ -1,10 +1,15 @@
-import strawShort from "./stsh.jpg";
+import strawshort from "./stsh.jpg";
 import apricot from "./ap.jpg";
 import huck from "./huck.jpg";
 import lemon from "./lemon.jpg";
 import purppie from "./purppie.jpg";
 import sour from "./sour.jpg";
-import rainbowBrite from "./rb.jpg";
+import rainbow from "./rb.jpg";
+import indigo from "./indigo.jpg";
+import redbut from "./redbut.jpg";
+import murky from "./murky.jpg";
+import lurky from "./lurky.jpg";
+import starlite from "./starlite.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -16,7 +21,7 @@ export interface QuizQuestion {
 export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Strawberry Shortcake","Miss Berry Hat","Fruit Princess","Strawberry Shortbread"],
-    image: strawShort},
+    image: strawshort},
   { answerNum: 0, question: "Who is this?",
     answers: ["Apricot","Peach","Berry Baby","Fig"],
     image: apricot},
@@ -33,10 +38,25 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Sour Grapes","Sour Queen","Grape Sorceress","Bitter Queen"],
     image: sour},
 
-
   { answerNum: 0, question: "Who is this?",
     answers: ["Rainbow Brite","Rainbow Jenny","Color Witch","Rainbow Strong"],
-    image: rainbowBrite}
+    image: rainbow},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Indigo","Ieesha","Azure","Sapphire"],
+    image: indigo},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Red Butler","Crimson Prince","Red Rider","Red Randy"],
+    image: redbut},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Murky","Lurky","Blerg","Color Bandit"],
+    image: murky},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Lurky","Murky","Pronk","Grog"],
+    image: lurky},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Starlite","Starbright","Star Dancer","Star Soar"],
+    image: starlite},
+
 ];
 
 // my little pony x 6
