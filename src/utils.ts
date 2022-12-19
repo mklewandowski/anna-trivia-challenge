@@ -39,6 +39,15 @@ import alf from "./alf.jpg";
 import willie from "./willie.jpg";
 import glow from "./glow.jpg";
 import pogo from "./pogo.jpg";
+import bow from "./bow.jpg";
+import shera from "./shera.jpg";
+import glimmer from "./glimmer.jpg";
+import ladylove from "./ladylove.jpg";
+import duchess from "./duchess.jpg";
+import guess from "./guess.jpg";
+import popple from "./popple.jpg";
+import monchhichi from "./monchhichi.jpg";
+import pound from "./pound.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -48,6 +57,7 @@ export interface QuizQuestion {
 }
 
 export const QuizQuestions: QuizQuestion[] = [
+
   { answerNum: 0, question: "Who is this?",
     answers: ["Rainbow Brite","Rainbow Jenny","Color Witch","Rainbow Strong"],
     image: rainbow},
@@ -66,6 +76,10 @@ export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Starlite","Starbright","Star Dancer","Star Soar"],
     image: starlite},
+
+  { answerNum: 0, question: "What is this?",
+    answers: ["Popple","Pupple","Snapple","Cuddle Bag"],
+    image: popple},
 
   { answerNum: 0, question: "What movie is this from?",
     answers: ["The Parent Trap","The Parent Trick","Twins","Star Wars"],
@@ -95,6 +109,20 @@ export const QuizQuestions: QuizQuestion[] = [
     image: space},
 
   { answerNum: 0, question: "Who is this?",
+    answers: ["She-ra","Lady-ra","Girl-ra","Gender Non Conforming-ra"],
+    image: shera},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Glimmer","Shimmer","Shine","Glamra"],
+    image: glimmer},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Bow","Luke","Duke","Dorf"],
+    image: bow},
+
+  { answerNum: 0, question: "What is this?",
+    answers: ["Pound Puppy","Spanky","Power Puppy","Delivery Dog"],
+    image: pound},
+
+  { answerNum: 0, question: "Who is this?",
     answers: ["Funshine Bear","Sunshine Bear","Fun Bear","Sun Bear"],
     image: funshine},
   { answerNum: 0, question: "Who is this?",
@@ -116,6 +144,17 @@ export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Paula Abdul","Madonna","Wilson Phillips","Belinda Carlisle"],
     image: paula},
+
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Lady Lovely Locks","Lady Long Locks","Miss Lovely Locks","Princess Hair"],
+    image: ladylove},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Duchess Ravenwaves","Princess Onyx","Princess Raven","Duchess Midnight"],
+    image: duchess},
+
+  { answerNum: 0, question: "What is this?",
+    answers: ["Monchhichi","Grape Ape","Missing Link","Furple"],
+    image: monchhichi},
 
   { answerNum: 0, question: "Who is this?",
     answers: ["Jem","Jam","Jim","Jom"],
@@ -161,9 +200,9 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Barbie Corvette","Barbie Race Car","Barbie Sweet 16","Barbiemobile "],
     image: corv},
 
-  { answerNum: 0, question: "What does she explain?",
-    answers: ["It All","Everything","The World","The Rules"],
-    image: clarissa},
+  { answerNum: 0, question: "What is this?",
+    answers: ["Guess Who","Guess Where","Guess Why","Guess When"],
+    image: guess},
 
   { answerNum: 0, question: "Who is this?",
     answers: ["Lady Jaye","Lady Action","Madam Pow","Miss Fisticuffs"],
@@ -171,6 +210,10 @@ export const QuizQuestions: QuizQuestion[] = [
   { answerNum: 0, question: "Who is this?",
     answers: ["Scarlett","Power Girl","Scarina","Tough Tina"],
     image: scarlett},
+
+  { answerNum: 0, question: "What's this?",
+    answers: ["Pogo Ball","Bounce Ball","Pogo Platform","Slide Ball"],
+    image: pogo},
 
   { answerNum: 0, question: "Who is this?",
     answers: ["Willie Tanner","Willie Thomas","Billie Tanner","Carl Tanner"],
@@ -183,10 +226,8 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Glow Worm","Snuggle Worm","Slumber Worm","Cuddle Worm"],
     image: glow},
 
-  { answerNum: 0, question: "What's this?",
-    answers: ["Pogo Ball","Bounce Ball","Pogo Platform","Slide Ball"],
-    image: pogo},
+  { answerNum: 0, question: "What does she explain?",
+    answers: ["It All","Everything","The World","The Rules"],
+    image: clarissa},
 
 ];
-
-// lady lovely she-ra
