@@ -10,6 +10,12 @@ import redbut from "./redbut.jpg";
 import murky from "./murky.jpg";
 import lurky from "./lurky.jpg";
 import starlite from "./starlite.jpg";
+import braveheart from "./braveheart.jpg";
+import funshine from "./funshine.jpg";
+import goodluck from "./goodluck.jpg";
+import grouchy from "./grouchy.jpg";
+import lotsaheart from "./lotsaheart.jpg";
+import wish from "./wish.jpg";
 
 export interface QuizQuestion {
   answerNum: number;
@@ -57,9 +63,27 @@ export const QuizQuestions: QuizQuestion[] = [
     answers: ["Starlite","Starbright","Star Dancer","Star Soar"],
     image: starlite},
 
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Funshine Bear","Sunshine Bear","Fun Bear","Sun Bear"],
+    image: funshine},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Good Luck Bear","Charm Bear","Shamrock Bear","Clover Bear"],
+    image: goodluck},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Grouchy Bear","Grumpy Bear","Foul Bear","Bad Attitude Bear"],
+    image: grouchy},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Wish Bear","Rainbow Bear","Sunshine Bear","Hope Bear"],
+    image: wish},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Brave Heart Lion","Brave Bold Lion","Strong Heart Lion","Bold Heart Lion"],
+    image: braveheart},
+  { answerNum: 0, question: "Who is this?",
+    answers: ["Lotsa Heart Elephant","Big Heart Elephant","Strong Heart Elephant","Gentle Heart Elephant"],
+    image: lotsaheart},
+
 ];
 
 // my little pony x 6
 // barbie x 6
-// carebears x 6
 // lady lovely, glow worms, x 6
