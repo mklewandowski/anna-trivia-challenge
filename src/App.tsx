@@ -1,6 +1,7 @@
 import React, {useState}  from 'react';
 import { AppHeader } from './app-header';
 import { AppBody } from './app-body';
+import { QuestionImage } from './question-image';
 import { QuizQuestions, shuffleArray } from "./utils";
 import './app.css';
 
@@ -54,9 +55,7 @@ function App() {
               />
             </>
           : <>
-              <div className="question-image-box">
-                <img src={QuizQuestions[questionNum].image} width={"250px"} alt="question" />
-              </div>
+              <QuestionImage questionImage={QuizQuestions[questionNum].image} />
               {showQuestion
                 ? <div className="question-label">{QuizQuestions[questionNum].question}</div>
                 : <div className="question-label">
