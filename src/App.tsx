@@ -2,6 +2,7 @@ import React, {useState}  from 'react';
 import { AppHeader } from './app-header';
 import { AppBody } from './app-body';
 import { QuestionImage } from './question-image';
+import { QuestionLabel } from './question-label';
 import { QuizQuestions, shuffleArray } from "./utils";
 import './app.css';
 
@@ -56,13 +57,13 @@ function App() {
             </>
           : <>
               <QuestionImage questionImage={QuizQuestions[questionNum].image} />
-              {showQuestion
-                ? <div className="question-label">{QuizQuestions[questionNum].question}</div>
-                : <div className="question-label">
-                    <span className="question-result">{`${answerNum === 0 ? "RIGHT!" : "WRONG!"}`}</span>
-                    <span className="question-result">{`${numCorrect} out of ${questionNum + 1} correct!`}</span>
-                  </div>
-              }
+              <QuestionLabel
+                showQuestion={showQuestion}
+                answerNum={answerNum}
+                numCorrect={numCorrect}
+                questionNum={questionNum}
+                questionText={QuizQuestions[questionNum].question}
+              />
               <div className="button-container">
                 { kButtonNums.map((buttonNum) =>
                   <button
