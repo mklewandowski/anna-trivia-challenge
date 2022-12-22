@@ -1,7 +1,8 @@
 import React, {useState}  from 'react';
-import anna from "./anna.png";
+import { AppHeader } from './app-header';
+import { AppBody } from './app-body';
 import { QuizQuestions, shuffleArray } from "./utils";
-import './App.css';
+import './app.css';
 
 function App() {
   const [quizRunning, setQuizRunning] = useState(false);
@@ -11,9 +12,6 @@ function App() {
   const [answerNum, setAnswerNum] = useState(0);
   const [numCorrect, setNumCorrect] = useState(0);
   const [showQuestion, setShowQuestion] = useState(true);
-
-  const introText = "Hi, Anna! It's you from the past. How well do you remember our childhood? Let's take a little quiz and find out. You'll need to dig deep into the dusty memories of Super 18, the Sears Christmas catalog, and Toys 'R' Us. Ready?";
-  const outroText = "You did it! You made it to the end of the quiz! Who cares how many you got right. You're 43 and grades don't matter anymore! Happy birthday!!";
 
   const onStartClick = () => {
     shuffleArray(QuizQuestions);
@@ -43,8 +41,17 @@ function App() {
   return (
     <div className="app">
       <div className="app-shell">
-        { quizRunning
+        { !quizRunning
           ? <>
+              <AppHeader />
+              <AppBody
+                quizComplete={quizComplete}
+                numCorrect={numCorrect}
+                questionNum={questionNum}
+                onStartClick={onStartClick}
+              />
+            </>
+          : <>
               <div className="question-image-box">
                 <img src={QuizQuestions[questionNum].image} width={"250px"} alt="question" />
               </div>
@@ -86,17 +93,6 @@ function App() {
                 </button>
               </div>
               {!showQuestion && <button className="next-button" onClick={onNextClick}>{"NEXT >"}</button>}
-            </>
-          : <>
-              <header className="intro-header">
-                <img src={anna} width={"150px"} alt="anna" />
-                Quiz Time With Anna
-                <div className="intro-header-sub">a time waster by therealmattkain</div>
-              </header>
-              { quizComplete && <div className="done-label">{`${numCorrect} out of ${questionNum + 1} correct!`}</div> }
-              <div className="intro-text">{quizComplete ? outroText : introText}</div>
-              { !quizComplete && <button className="start-button" onClick={onStartClick}>{"START >"}</button>
-              }
             </>
         }
       </div>
