@@ -4,6 +4,8 @@ import { AppBody } from './app-body';
 import { QuizQuestions, shuffleArray } from "./utils";
 import './app.css';
 
+const kButtonNums: number[] = [0, 1, 2, 3];
+
 function App() {
   const [quizRunning, setQuizRunning] = useState(false);
   const [quizComplete, setQuizComplete] = useState(false);
@@ -63,34 +65,16 @@ function App() {
                   </div>
               }
               <div className="button-container">
-                <button
-                  className={`answer-button ${!showQuestion && ((0 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((0 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
-                  onClick={() => {onAnswerClick((0 + quizOffset) % 4)}}
-                  disabled={!showQuestion}
-                >
-                  {QuizQuestions[questionNum].answers[(0 + quizOffset) % 4]}
-                </button>
-                <button
-                  className={`answer-button ${!showQuestion && ((1 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((1 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
-                  onClick={() => {onAnswerClick((1 + quizOffset) % 4)}}
-                  disabled={!showQuestion}
-                >
-                  {QuizQuestions[questionNum].answers[(1 + quizOffset) % 4]}
-                </button>
-                <button
-                  className={`answer-button ${!showQuestion && ((2 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((2 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
-                  onClick={() => {onAnswerClick((2 + quizOffset) % 4)}}
-                  disabled={!showQuestion}
-                >
-                  {QuizQuestions[questionNum].answers[(2 + quizOffset) % 4]}
-                </button>
-                <button
-                  className={`answer-button ${!showQuestion && ((3 + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((3 + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
-                  onClick={() => {onAnswerClick((3 + quizOffset) % 4)}}
-                  disabled={!showQuestion}
-                >
-                  {QuizQuestions[questionNum].answers[(3 + quizOffset) % 4]}
-                </button>
+                { kButtonNums.map((buttonNum) =>
+                  <button
+                    className={`answer-button ${!showQuestion && ((buttonNum + quizOffset) % 4) === 0 ? "answer-correct" : ""} ${!showQuestion && answerNum !== 0 && ((buttonNum + quizOffset) % 4) === answerNum ? "answer-incorrect" : ""}`}
+                    onClick={() => {onAnswerClick((buttonNum + quizOffset) % 4)}}
+                    disabled={!showQuestion}
+                    key={`button-${buttonNum}`}
+                  >
+                    {QuizQuestions[questionNum].answers[(buttonNum + quizOffset) % 4]}
+                  </button>
+                )}
               </div>
               {!showQuestion && <button className="next-button" onClick={onNextClick}>{"NEXT >"}</button>}
             </>
