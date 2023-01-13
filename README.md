@@ -1,6 +1,8 @@
 # Anna Trivia Challenge
 Anna Trivia Challenge is a small '80s quiz that I made for my sister. It's built using React and written in Typescript. Anna Trivia Challenge is hosted on a GitHub Page at https://mklewandowski.github.io/anna-trivia-challenge/
 
+![Anna Trivia Challenge gameplay](https://github.com/mklewandowski/anna-trivia-challenge/blob/main/anna.jpg?raw=true)
+
 ## Run Locally
 - clone GitHub repo
 - run `npm install`
